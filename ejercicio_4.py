@@ -17,8 +17,8 @@ conversiones = {
 
 
 def mostrar_conversiones_disponibles():
-    print("\nUnidades disponibles: metros, pies, kilometros, millas, kilogramos y libras.")
-    print(conversiones)
+    print("Unidades disponibles: metros, pies, kilometros, millas, kilogramos y libras.")
+
 
 def convertir(cantidad, origen, destino):
     if origen in conversiones:
@@ -30,10 +30,10 @@ def convertir(cantidad, origen, destino):
 
 mostrar_conversiones_disponibles()
 print("")
-cantidad = float(input("Ingrese la cantidad: "))
-origen = input("Ingrese la unidad de origen: ").lower()
-destino = input("Ingrese la unidad de destino: ").lower()
+cantidad = float(input("🔢 Ingrese la cantidad: "))
+origen = input("📍 Ingrese la unidad de origen: ").lower()
+destino = input("🎯 Ingrese la unidad de destino: ").lower()
 
 resultado = convertir(cantidad, origen, destino)
 
-print("Resultado:", resultado)
+print("✅ Resultado:", resultado)
