@@ -5,26 +5,31 @@
 
 lista_compras = []
 
-while True:
-    print("\n1. Agregar item a la lista")
-    print("2. Eliminar item de la lista")
-    print("3. Ver la lista completa")
-    print("4. Salir")
+print("="*60)
+print("CALIFICACION LISTAS📋")
+print("="*60)
 
-    opcion = input("Seleccione una opcion: ")
+while True:
+    print("\n➕ 1. Agregar item a la lista")
+    print("➖ 2. Eliminar item de la lista")
+    print("👁️  3. Ver la lista completa")
+    print("💨 4. Salir")
+
+    print("=" * 50)
+    opcion = input("🔘 Seleccione una opcion: ")
 
     if opcion == "1":
         producto = input("Ingrese el producto: ")
         lista_compras.append(producto)
-        print("Producto agregado correctamente.")
+        print(f"✅ El Producto {producto} fue agregado correctamente ")
     elif opcion == "2":
         producto = input("Ingrese el producto a eliminar: ")
 
         if producto in lista_compras:
             lista_compras.remove(producto)
-            print("Producto eliminado correctamente.")
+            print(f"🔴 El Producto {producto} fue eliminado correctamente.")
         else:
-            print("El producto no existe en la lista.")
+            print(f"🆘 El producto {producto} no existe en la lista.")
     elif opcion == "3":
         print("\nLista de compras:")
 
@@ -37,4 +42,4 @@ while True:
         print("Programa finalizado.")
         break
     else:
-        print("Opcion invalida.")
+        print("Opcion invalida. INTENTE DE NUEVO")

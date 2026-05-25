@@ -17,8 +17,8 @@ conversiones = {
 
 
 def mostrar_conversiones_disponibles():
-    print("Unidades disponibles: metros, pies, kilometros, millas, kilogramos y libras.")
-
+    print("\nUnidades disponibles: metros, pies, kilometros, millas, kilogramos y libras.")
+    print(conversiones)
 
 def convertir(cantidad, origen, destino):
     if origen in conversiones:

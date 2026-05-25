@@ -14,6 +14,13 @@ def analizar_calificaciones(calificaciones):
 notas = [4.5, 3.8, 5.0, 2.9, 4.2]
 resultado = analizar_calificaciones(notas)
 
-print("Promedio:", round(resultado[0], 2))
-print("Nota mas alta:", resultado[1])
-print("Nota mas baja:", resultado[2])
+print("-----📋Lista de calificaciones-----")
+print("=" * 60)
+print(notas)
+print("=" * 60)
+
+print("El Promedio grupal es :", round(resultado[0], 2))
+print("-" * 60)
+print("La Nota mas alta es :", resultado[1])
+print("-" * 60)
+print("La Nota mas baja es :", resultado[2])
