@@ -17,9 +17,9 @@ def buscar_contacto(agenda):
     nombre = input("Ingrese el nombre a buscar: ")
 
     if nombre in agenda:
-        print("El número de telefono de", nombre + ":", agenda[nombre])
+        print("\n","El número de telefono de", nombre + ":", agenda[nombre])
     else:
-        print("El contacto no existe.")
+        print("\n","El contacto no existe.")
 
 
 def mostrar_contactos(agenda):
@@ -27,7 +27,7 @@ def mostrar_contactos(agenda):
     print("\nLista de contactos:")
 
     if len(agenda) == 0:
-        print("La agenda esta vacia.")
+        print("\n","La agenda esta vacia.")
     else:
         for nombre, telefono in agenda.items():
             print(nombre, "|", telefono)
@@ -61,7 +61,7 @@ while True:
     print("3. Mostrar todos los contactos")
     print("4. Salir")
 
-    opcion = input("Seleccione una opcion: ")
+    opcion = input("\n","Seleccione una opcion: ")
 
     if opcion == "1":
         agregar_contacto(agenda)
@@ -71,7 +71,7 @@ while True:
         mostrar_contactos(agenda)
     elif opcion == "4":
         # Cierra el programa.
-        print("Programa finalizado.")
+        print("\n","Programa finalizado.")
         break
     else:
-        print("Opcion invalida.")
+        print("\n","Opcion invalida.")
