@@ -17,7 +17,7 @@ def buscar_contacto(agenda):
     nombre = input("Ingrese el nombre a buscar: ")
 
     if nombre in agenda:
-        print("Telefono de", nombre + ":", agenda[nombre])
+        print("El número de telefono de", nombre + ":", agenda[nombre])
     else:
         print("El contacto no existe.")
 
