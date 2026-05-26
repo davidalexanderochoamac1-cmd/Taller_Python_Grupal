@@ -46,7 +46,7 @@ while True:
                 print("•", producto)
     elif opcion == "4":
         # Finaliza la ejecucion del programa.
-        print("👋 Programa finalizado.")
+        print("👋\n Saliendo de consola........")
         break
     else:
         # Informa cuando la opcion no coincide con el menu.

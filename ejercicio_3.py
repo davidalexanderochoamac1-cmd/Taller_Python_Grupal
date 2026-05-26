@@ -71,7 +71,7 @@ while True:
         mostrar_contactos(agenda)
     elif opcion == "4":
         # Cierra el programa.
-        print("\n👋 Programa finalizado.")
+        print("👋\n Saliendo de consola........")
         break
     else:
         print("\n⚠️ Opcion invalida.")

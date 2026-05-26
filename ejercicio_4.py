@@ -54,7 +54,7 @@ while True:
         origen = "libras"
         destino = "kilogramos"
     elif opcion == "5":
-        print("👋 Programa finalizado.")
+        print("👋 Saliendo de consola........")
         break
     else:
         print("⚠️ Opcion invalida.")

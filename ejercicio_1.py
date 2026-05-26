@@ -2,8 +2,6 @@
 # EJERCICIO 1
 # Analisis de Calificaciones
 # ================================
-
-
 def analizar_calificaciones(calificaciones):
     # Calcula el promedio de todas las notas ingresadas.
     promedio = sum(calificaciones) / len(calificaciones)
