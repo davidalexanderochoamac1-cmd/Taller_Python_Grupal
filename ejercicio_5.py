@@ -4,10 +4,8 @@
 # ================================
 
 # Lista donde se almacenan todos los productos registrados.
-inventario = []
 
-
-def agregar_producto():
+def agregar_producto(inventario):
     # Solicita los datos del producto y crea su registro.
     nombre = input("Nombre del producto: ")
     precio = float(input("Precio del producto: "))
@@ -23,7 +21,7 @@ def agregar_producto():
     print("Producto agregado correctamente.")
 
 
-def realizar_venta():
+def realizar_venta(inventario):
     # Pide el nombre del producto vendido y la cantidad a descontar.
     nombre = input("Producto vendido: ")
     cantidad_vendida = int(input("Cantidad vendida: "))
@@ -42,7 +40,7 @@ def realizar_venta():
     print("El producto no existe en el inventario.")
 
 
-def mostrar_inventario():
+def mostrar_inventario(inventario):
     # Muestra la informacion de cada producto almacenado.
     print("\nInventario actual:")
 
@@ -55,6 +53,7 @@ def mostrar_inventario():
             print("Precio:", producto["precio"])
             print("Cantidad:", producto["cantidad"])
 
+inventario = []
 
 # Mantiene disponible el menu principal del sistema.
 while True:
