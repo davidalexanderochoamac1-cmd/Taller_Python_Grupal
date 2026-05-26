@@ -74,7 +74,7 @@ while True:
         mostrar_inventario()
     elif opcion == "4":
         # Termina la ejecucion del programa.
-        print("Programa finalizado.")
+        print("👋 Saliendo de consola........")
         break
     else:
         print("Opcion invalida.")
