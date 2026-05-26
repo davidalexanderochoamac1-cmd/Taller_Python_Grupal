@@ -7,47 +7,47 @@
 lista_compras = []
 
 print("=" * 60)
-print("LISTA DE COMPRAS")
+print("🛒 LISTA DE COMPRAS")
 print("=" * 60)
 
 # Repite el menu hasta que el usuario decida salir.
 while True:
-    print("\n1. Agregar item a la lista")
-    print("2. Eliminar item de la lista")
-    print("3. Ver la lista completa")
-    print("4. Salir")
+    print("\n1. ➕ Agregar item a la lista")
+    print("2. ➖ Eliminar item de la lista")
+    print("3. 📋 Ver la lista completa")
+    print("4. 🚪 Salir")
 
     print("=" * 50)
-    opcion = input("Seleccione una opcion: ")
+    opcion = input("👉 Seleccione una opcion: ")
 
     if opcion == "1":
         # Agrega un nuevo producto al final de la lista.
-        producto = input("Ingrese el producto: ")
+        producto = input("📝 Ingrese el producto: ")
         lista_compras.append(producto)
-        print(f"El producto {producto} fue agregado correctamente.")
+        print(f"✅ El producto {producto} fue agregado correctamente.")
     elif opcion == "2":
         # Solicita el producto que se desea quitar.
-        producto = input("Ingrese el producto a eliminar: ")
+        producto = input("🗑️ Ingrese el producto a eliminar: ")
 
         # Solo elimina el producto si ya existe en la lista.
         if producto in lista_compras:
             lista_compras.remove(producto)
-            print(f"El producto {producto} fue eliminado correctamente.")
+            print(f"✅ El producto {producto} fue eliminado correctamente.")
         else:
-            print(f"El producto {producto} no existe en la lista.")
+            print(f"❌ El producto {producto} no existe en la lista.")
     elif opcion == "3":
         # Muestra todos los productos almacenados.
-        print("\nLista de compras:")
+        print("\n📋 Lista de compras:")
 
         if len(lista_compras) == 0:
-            print("La lista esta vacia.")
+            print("📭 La lista esta vacia.")
         else:
             for producto in lista_compras:
-                print(producto)
+                print("•", producto)
     elif opcion == "4":
         # Finaliza la ejecucion del programa.
-        print("Programa finalizado.")
+        print("👋 Programa finalizado.")
         break
     else:
         # Informa cuando la opcion no coincide con el menu.
-        print("Opcion invalida. Intente de nuevo.")
+        print("⚠️ Opcion invalida. Intente de nuevo.")

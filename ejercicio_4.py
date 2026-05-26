@@ -32,14 +32,14 @@ def convertir(cantidad, origen, destino):
 
 # Repite el menu hasta que el usuario decida salir.
 while True:
-    print("\nCONVERSOR DE UNIDADES")
-    print("1. Metros a pies")
-    print("2. Pies a metros")
-    print("3. Kilogramos a libras")
-    print("4. Libras a kilogramos")
-    print("5. Salir")
+    print("\n📏 CONVERSOR DE UNIDADES")
+    print("1. 📐 Metros a pies")
+    print("2. 📏 Pies a metros")
+    print("3. ⚖️ Kilogramos a libras")
+    print("4. 🏋️ Libras a kilogramos")
+    print("5. 🚪 Salir")
 
-    opcion = input("Seleccione una opcion: ")
+    opcion = input("👉 Seleccione una opcion: ")
 
     if opcion == "1":
         origen = "metros"
@@ -54,13 +54,13 @@ while True:
         origen = "libras"
         destino = "kilogramos"
     elif opcion == "5":
-        print("Programa finalizado.")
+        print("👋 Programa finalizado.")
         break
     else:
-        print("Opcion invalida.")
+        print("⚠️ Opcion invalida.")
         continue
 
     # Solicita la cantidad, realiza la conversion y muestra el resultado.
-    cantidad = float(input(f"Ingrese la cantidad en {origen}: "))
+    cantidad = float(input(f"🔢 Ingrese la cantidad en {origen}: "))
     resultado = convertir(cantidad, origen, destino)
-    print(f"Resultado: {round(resultado, 2)} {destino}")
+    print(f"✅ Resultado: {round(resultado, 2)} {destino}")

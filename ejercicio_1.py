@@ -20,13 +20,13 @@ notas = [4.5, 3.8, 5.0, 2.9, 4.2]
 resultado = analizar_calificaciones(notas)
 
 # Muestra la lista completa y el resumen del analisis.
-print("----- Lista de calificaciones -----")
+print("📋 ----- Lista de calificaciones -----")
 print("=" * 60)
 print(notas)
 print("=" * 60)
 
-print("El promedio grupal es:", round(resultado[0], 2))
+print("📊 El promedio grupal es:", round(resultado[0], 2))
 print("-" * 60)
-print("La nota mas alta es:", resultado[1])
+print("🏆 La nota mas alta es:", resultado[1])
 print("-" * 60)
-print("La nota mas baja es:", resultado[2])
+print("📉 La nota mas baja es:", resultado[2])
