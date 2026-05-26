@@ -25,7 +25,7 @@ print("=" * 60)
 print(notas)
 print("=" * 60)
 
-print("📊 El promedio grupal es:", round(resultado[0], 2))
+print("📊 El promedio general es:", round(resultado[0], 2))
 print("-" * 60)
 print("🏆 La nota mas alta es:", resultado[1])
 print("-" * 60)
