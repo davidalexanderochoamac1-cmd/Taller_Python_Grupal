@@ -61,7 +61,7 @@ while True:
     print("3. Mostrar todos los contactos")
     print("4. Salir")
 
-    opcion = input("\n","Seleccione una opcion: ")
+    opcion = input("\n Seleccione una opcion: ")
 
     if opcion == "1":
         agregar_contacto(agenda)
