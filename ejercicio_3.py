@@ -33,6 +33,23 @@ def mostrar_contactos(agenda):
             print(nombre, "|", telefono)
 
 
+# Bloque comentado de referencia para eliminar un contacto de la agenda.
+# def eliminar_contacto(agenda):
+#     # Solicita el nombre del contacto que se desea eliminar.
+#     nombre = input("Ingrese el nombre del contacto a eliminar: ")
+#
+#     # Verifica si el contacto existe antes de borrarlo.
+#     if nombre in agenda:
+#         del agenda[nombre]
+#         print("Contacto eliminado correctamente.")
+#     else:
+#         print("El contacto no existe.")
+#
+# Para integrarlo al menu, se podria agregar una opcion adicional:
+# elif opcion == "4":
+#     eliminar_contacto(agenda)
+
+
 # Diccionario principal donde se almacenan los contactos.
 agenda = {}
 
