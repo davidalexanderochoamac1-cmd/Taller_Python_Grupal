@@ -66,11 +66,11 @@ while True:
     opcion = input("Seleccione una opcion: ")
 
     if opcion == "1":
-        agregar_producto()
+        agregar_producto(inventario)
     elif opcion == "2":
-        realizar_venta()
+        realizar_venta(inventario)
     elif opcion == "3":
-        mostrar_inventario()
+        mostrar_inventario(inventario)
     elif opcion == "4":
         # Termina la ejecucion del programa.
         print("Programa finalizado.")
