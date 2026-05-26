@@ -3,43 +3,64 @@
 # Conversor de Unidades
 # ================================
 
-# Diccionario con los factores de conversion entre unidades.
+# Diccionario con factores de conversion en ambos sentidos.
 conversiones = {
     "metros": {
         "pies": 3.28
     },
-    "kilometros": {
-        "millas": 0.62
+    "pies": {
+        "metros": 1 / 3.28
     },
     "kilogramos": {
         "libras": 2.20
+    },
+    "libras": {
+        "kilogramos": 1 / 2.20
     }
 }
 
 
-def mostrar_conversiones_disponibles():
-    # Informa las unidades disponibles para convertir.
-    print("Unidades disponibles: metros, pies, kilometros, millas, kilogramos y libras.")
-
-
 def convertir(cantidad, origen, destino):
-    # Verifica primero si la unidad de origen existe.
+    # Verifica si la unidad de origen existe en el diccionario.
     if origen in conversiones:
-        # Luego valida si la unidad de destino esta definida para ese origen.
+        # Verifica si la unidad de destino existe dentro de esa unidad de origen.
         if destino in conversiones[origen]:
             return cantidad * conversiones[origen][destino]
         return "La unidad de destino no existe en el diccionario."
     return "La unidad de origen no existe en el diccionario."
 
 
-# Muestra las opciones y solicita los datos al usuario.
-mostrar_conversiones_disponibles()
-print("")
-cantidad = float(input("Ingrese la cantidad: "))
-origen = input("Ingrese la unidad de origen: ").lower()
-destino = input("Ingrese la unidad de destino: ").lower()
+# Repite el menu hasta que el usuario decida salir.
+while True:
+    print("\nCONVERSOR DE UNIDADES")
+    print("1. Metros a pies")
+    print("2. Pies a metros")
+    print("3. Kilogramos a libras")
+    print("4. Libras a kilogramos")
+    print("5. Salir")
 
-# Ejecuta la conversion con los valores ingresados.
-resultado = convertir(cantidad, origen, destino)
+    opcion = input("Seleccione una opcion: ")
 
-print("Resultado:", resultado)
+    if opcion == "1":
+        origen = "metros"
+        destino = "pies"
+    elif opcion == "2":
+        origen = "pies"
+        destino = "metros"
+    elif opcion == "3":
+        origen = "kilogramos"
+        destino = "libras"
+    elif opcion == "4":
+        origen = "libras"
+        destino = "kilogramos"
+    elif opcion == "5":
+        print("Programa finalizado.")
+        break
+    else:
+        print("Opcion invalida.")
+        continue
+
+    # Solicita la cantidad, realiza la conversion y muestra el resultado.
+    cantidad = float(input(f"Ingrese la cantidad en {origen}: "))
+    resultado = convertir(cantidad, origen, destino)
+    print(f"Resultado: {round(resultado, 2)} {destino}")
